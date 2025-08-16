@@ -431,6 +431,60 @@
                 right: -100vw;
             }
             
+            .chat-panel-header {
+                padding: 15px;
+            }
+            
+            .chat-panel-title h3 {
+                font-size: 1.1rem;
+            }
+            
+            .chat-messages {
+                padding: 15px;
+            }
+            
+            .chat-input-container {
+                padding: 15px;
+                background: var(--card-bg);
+                border-top: 1px solid var(--border-color);
+                position: relative;
+                bottom: 0;
+            }
+            
+            .chat-input-form {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+            }
+            
+            .chat-input {
+                flex: 1;
+                padding: 12px 15px;
+                border: 2px solid var(--border-color);
+                border-radius: 20px;
+                background: var(--bg-primary);
+                color: var(--text-primary);
+                outline: none;
+                font-size: 16px; /* Evita zoom en iOS */
+                min-height: 44px; /* Altura mínima táctil */
+            }
+            
+            .send-btn {
+                padding: 12px 15px;
+                min-width: 44px;
+                min-height: 44px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            
+            .message-content {
+                max-width: 85%;
+                font-size: 0.9rem;
+            }
+            
             .robot-container {
                 flex-direction: column;
             }
@@ -440,6 +494,46 @@
                 right: 10px;
                 width: 45px;
                 height: 45px;
+            }
+            
+            .chat-bubble {
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            .info-cards {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+
+        /* Media query adicional para pantallas muy pequeñas */
+        @media (max-width: 480px) {
+            .chat-input-container {
+                padding: 12px;
+            }
+            
+            .chat-input {
+                font-size: 16px;
+                padding: 10px 12px;
+            }
+            
+            .send-btn {
+                padding: 10px 12px;
+                min-width: 40px;
+                min-height: 40px;
+            }
+            
+            .chat-panel-header {
+                padding: 12px;
+            }
+            
+            .chat-messages {
+                padding: 12px;
             }
         }
 
